@@ -1,0 +1,35 @@
+
+*{
+
+	box-sizing: border-box;
+  }
+  body
+  {
+	
+	  font-family: sans-serif;
+	  background: url(rev.jpg);
+	  background-size: cover;
+  }
+  
+  .wrapper{
+	max-width: 1000px;
+	max-height: 1000px;
+	border-radius: 10px;
+	width: 100%;
+	background: #fff;
+	margin: 50px auto;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+	padding: 30px;
+  }
+  
+  
+  .wrapper .title{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: linear-gradient(120deg,#3498db,#8e44ad);
+	text-transform: uppercase;
+	text-align: center;
+  }
+  
+  

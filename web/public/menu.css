@@ -66,15 +66,15 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.details ul{
+.details table{
     white-space: nowrap;
     font-family: verdana;
     font-size: 20px;
-    color: #e8e3bd;
+    color: #fff;
     margin: 0;
     position: absolute;
     top: 55%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 

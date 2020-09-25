@@ -146,7 +146,6 @@ if (currentUser) {
             <td>${profile.LastName}</td>
             <td>${profile.Email}</td>
             <td>${profile.PhoneNum}</td>
-            <td>${profile.EmployType}</td>
             <td>${profile.DateOfBirth}</td>
           </tr>`
         );
@@ -157,7 +156,29 @@ if (currentUser) {
     });
 } 
 
+$('#fridge-graph').on('click', () => {
+  $('#graph').append(`
+  <a href="https://plotly.com/~ishan1104/19/?share_key=SJRP1GJwIL1RxZgXnWbt6N" target="_blank" title="ishan" style="display: block; text-align: center;"><img src="https://plotly.com/~ishan1104/19.png?share_key=SJRP1GJwIL1RxZgXnWbt6N" alt="ishan" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+  <script data-plotly="ishan1104:19" sharekey-plotly="SJRP1GJwIL1RxZgXnWbt6N" src="https://plotly.com/embed.js" async></script>
+`)
 
+});
+
+$('#temp-graph').on('click', () => {
+  $('#graph').append(`
+  <a href="https://plotly.com/~ishan1104/21/?share_key=6G4K26nd8Jv3nxM8OXueOh" target="_blank" title="temp" style="display: block; text-align: center;"><img src="https://plotly.com/~ishan1104/21.png?share_key=6G4K26nd8Jv3nxM8OXueOh" alt="temp" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+  <script data-plotly="ishan1104:21" sharekey-plotly="6G4K26nd8Jv3nxM8OXueOh" src="https://plotly.com/embed.js" async></script>
+`)
+
+});
+
+$('#motion-graph').on('click', () => {
+  $('#graph').append(`
+  <a href="https://plotly.com/~ishan1104/23/?share_key=CeI0q68zC7s76OKheCfsAg" target="_blank" title="motion" style="display: block; text-align: center;"><img src="https://plotly.com/~ishan1104/23.png?share_key=CeI0q68zC7s76OKheCfsAg" alt="motion" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+  <script data-plotly="ishan1104:23" sharekey-plotly="CeI0q68zC7s76OKheCfsAg" src="https://plotly.com/embed.js" async></script>
+`)
+
+});
 
 
 $('#add-review').on('click', () => {
@@ -295,7 +316,6 @@ $('#add-profile').on('click', () => {
   const LastName = $('#LastName').val();
   const Email = $('#Email').val();
   const PhoneNum = $('#PhoneNum').val();
-  const EmployType = $('#EmployType').val();
   const DateOfBirth = $('#DateOfBirth').val();
   const body = {
     NurseName,
@@ -303,7 +323,6 @@ $('#add-profile').on('click', () => {
     LastName,
     Email,
     PhoneNum,
-    EmployType,
     DateOfBirth
 };
 

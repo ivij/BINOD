@@ -176,7 +176,7 @@ app.post('/api/authenticate', (req, res) => {
 });
 
 app.post('/api/profiles', (req, res) => {
-    const { NurseName,FirstName, LastName, Email, PhoneNum,EmployType, DateOfBirth } = req.body;
+    const { NurseName,FirstName, LastName, Email, PhoneNum, DateOfBirth } = req.body;
     console.log(req.body); 
     
     Profile.findOne({ NurseName: NurseName }, (err, found) => {
@@ -194,7 +194,6 @@ app.post('/api/profiles', (req, res) => {
                 LastName,
                 Email,
                 PhoneNum,
-                EmployType,
                 DateOfBirth
             });
 

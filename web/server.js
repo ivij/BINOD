@@ -81,9 +81,6 @@ app.get('/reviews', (req, res) => {
     res.sendFile(`${base}/reviews.html`);
 });
 
-app.get('/menus', (req, res) => {
-    res.sendFile(`${base}/new-menu.html`);
-});
 
 app.get('/add-review', (req, res) => {
     res.sendFile(`${base}/add-review.html`);
@@ -107,7 +104,7 @@ app.get('/project', (req, res) => {
     res.sendFile(`${base}/project.html`);
 });
 
-app.get('/menu', (req, res) => {
+app.get('/menus', (req, res) => {
     res.sendFile(`${base}/menu.html`);
 });
 app.get('/addProfile', (req, res) => {

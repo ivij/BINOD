@@ -6,6 +6,5 @@ module.exports = mongoose.model('profile', new mongoose.Schema({
  LastName:String,
  Email: String,
  PhoneNum:Number,
- EmployType: String,
  DateOfBirth:Date
 }));
