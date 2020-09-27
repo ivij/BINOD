@@ -156,7 +156,7 @@ if (currentUser) {
     });
 } 
 
-$('#fridge-graph').on('click', () => {
+$('#light-graph').on('click', () => {
   $('#graph').append(`
   <a href="https://plotly.com/~ishan1104/19/?share_key=SJRP1GJwIL1RxZgXnWbt6N" target="_blank" title="ishan" style="display: block; text-align: center;"><img src="https://plotly.com/~ishan1104/19.png?share_key=SJRP1GJwIL1RxZgXnWbt6N" alt="ishan" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
   <script data-plotly="ishan1104:19" sharekey-plotly="SJRP1GJwIL1RxZgXnWbt6N" src="https://plotly.com/embed.js" async></script>
