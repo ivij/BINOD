@@ -1,6 +1,6 @@
 $('#navbar').load('navbar.html');
 $('#footer').load('footer.html');
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://binod-brown.vercel.app/api';
 const MQTT_URL = 'http://localhost:5001/send-command';
 
 const patients = JSON.parse(localStorage.getItem('patients')) || [];
