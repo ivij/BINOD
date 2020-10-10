@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 mongoose.connect("mongodb+srv://ivij:Ish%40nvij11@task.c7clx.mongodb.net", {useNewUrlParser:true, useUnifiedTopology: true });
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 const app = express();
-const port = process.env.PORT || https://binod11.herokuapp.com/;
+const port = process.env.PORT || 3000;
 const base = `${__dirname}/public`;
 const cookie = require('cookie-session');
 
